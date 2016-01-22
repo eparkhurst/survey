@@ -13,8 +13,19 @@
         <label for="customerName">Customer Name: </label>
         <input name="customerName" type="text" id="customerName" ng-class="{red:leadForm.customerName.$invalid && leadForm.customerName.$touched}"
           ng-minlength="3" ng-model="form.customerName" required>
+       <label for="phoneNumber">Phone Number</label>
+       <input name="cust#" type="tel" id="customer#" ng-class="{red:leadForm.cust#.$invalid && leadForm.customerName.$touched}"
+          ng-minlength="3" ng-model="form.cust#" required>
+        <label for="custEmail">Email</label>
+        <input name="custEmail" type="email" id="custEmail" ng-class="{red:leadForm.custEmail.$invalid && leadForm.customerName.$touched}"
+          ng-minlength="3" ng-model="form.custEmail">
         <label for="eventName">Event Name: </label>
         <input type="text" name="eventName" id="eventName" ng-minlength="3" ng-model="form.eventName" ng-class="{red:leadForm.eventName.$invalid && leadForm.eventName.$touched}" required >
+        <label for="eventDate">Event Date</label>
+        <input name="eventDate" type="eventDate" id="EventDate" ng-class="{red:leadForm.eventDate.$invalid && leadForm.customerName.$touched}"
+          ng-minlength="3" ng-model="form.eventDate">
+        <label for="equip">Equipment Needed</label>
+        <textarea rows="4" cols"50"></textarea>
         <input type="submit" value="Click me!" ng-disabled="leadForm.$invalid" ng-click="logit()">
         <p class="red2" ng-show="leadForm.eventName.$error.minlength && secondForm.eventName.$touched">Your event name is too short.</p>
       </form>
