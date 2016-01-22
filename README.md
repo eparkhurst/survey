@@ -1,3 +1,3 @@
 # survey
 
-This is a client side survey for MWPG
+This is a lead survey for MWPG
